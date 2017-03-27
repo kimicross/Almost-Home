@@ -1,152 +1,201 @@
 <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
-	<title>Spare Closet</title>
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet" media="screen">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Spare Closet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="img/favicon.svg" rel="icon">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
   </head>
-  <body>
 
-    <!--Navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <a class="main-logo pull-left" href="#">Spare Closet</a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav pull-right hidden-xs">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Shop</a></li>
-          </ul>
+
+  <body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+        <div class="navbar-header">
+          <a class="main-logo pull-left" href="index.html">Spare Closet</a>
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="icon-bar"></span>
+    				 <span class="icon-bar"></span>
+    				 <span class="icon-bar"></span>
+    			</button>
+        </div>
+        <div class="navbar-collapse collapse">
+  				<ul class="nav navbar-nav navbar-right">
+  					<li class="nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="how-it-works.html">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html">Shop</a>
+            </li>
+  				</ul>
+			  </div>
+      </div>
+		</nav>
+  <!-- End navbar -->
+
+<!--Begin HOME -->
+    <!--Section 1 -->
+    <div class="section-wrapper-intro">
+    	<div class="container">
+     		<div class="row-intro">
+       		<div class="col-md-8 col-sm-7">
+					<h1>Online shop featuring new and gently used items</h1>
+					<h2 class="lead">New styles posted every Tuesday at 12PM EST</h2>
+						<a class="btn btn-primary btn-lg" href="https://www.instagram.com/sparecloset/">Start Shopping!</a>
+				</div>
+				<div class="col-md-4 col-sm-5 hidden-xs">
+					<form>
+            <h3>Sign Up For Notifications</h3>
+            <div class="form-group">
+							<label for="firstname" class="form_label">Name</label>
+							<input type="text" id="first_name" class="form-control" required="required" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="lastname" class="sr-only">Name</label>
+              <input type="text" id="last_name" class="form-control" required="required" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+  						<label for="email" class="form_label">Email</label>
+						  <input type="email" id="email" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+  						<label for="birthday" class="form_label">Birthday</label>
+							<select id="birthday_month" class="form-control">
+							  <option value="january">January</option>
+							  <option value="february">February</option>
+							  <option value="march">March</option>
+							  <option value="april">April</option>
+							  <option value="may">May</option>
+							  <option value="june">June</option>
+							  <option value="july">July</option>
+							  <option value="august">August</option>
+							  <option value="september">September</option>
+							  <option value="october">October</option>
+							  <option value="november">November</option>
+							  <option value="december">December</option>
+							</select>
+            </div>
+            <div class="form-group">
+  						<label for="brands" class="form_label">Preferred Brands</label>
+							<select id="brands" class="form-control">
+							  <option value="anthropologie">Anthropologie</option>
+							  <option value="free_people">Free People</option>
+							  <option value="j_crew">J. Crew</option>
+							  <option value="kate_spade">Kate Spade</option>
+							  <option value="lululemon">Lululemon</option>
+							  <option value="marc_jacobs">Marc by Marc Jacobs</option>
+							  <option value="madewell">Madewell</option>
+						   </select>
+            </div>
+            <div class="form-group">
+					    <label for="notifications" class="form_label">Notify me about...</label>
+							<div class="checkbox">
+								<label><input type="checkbox"> Sale Reminders</label><br>
+                <label><input type="checkbox"> Preferred Brands</label><br>
+                <label><input type="checkbox"> Special Offers</label><br>
+							</div>
+            </div>
+            <button type="submit" class="btn btn-default" id="submit">Sign Up!</button>
+    		  </form>
+	      </div>
+      </div>
+      </div>
+    </div>
+    <!--End Section 1 -->
+
+          <!--Section 2 - HOW IT WORKS -->
+    <div class="section-wrapper-white">
+      <div class="container text-center">
+        <div class="row">
+          <h1 class="">How It Works</h1>
+          <div class="col-sm-4">
+            <h2>Claim</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus est, congue eu justo vel, ullamcorper faucibus ligula. Etiam ex arcu, varius id rutrum at, convallis non orci. Quisque ac posuere nunc, ut pretium ante. In quis mi diam. Aenean placerat odio vel vestibulum vulputate. Morbi vitae nisl mauris. Cras vulputate posuere lacus, non porttitor sem aliquam in. Duis venenatis aliquam posuere. Praesent varius lacus nulla, non maximus sapien venenatis viverra.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h2>Pay</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus est, congue eu justo vel, ullamcorper faucibus ligula. Etiam ex arcu, varius id rutrum at, convallis non orci. Quisque ac posuere nunc, ut pretium ante. In quis mi diam. Aenean placerat odio vel vestibulum vulputate. Morbi vitae nisl mauris. Cras vulputate posuere lacus, non porttitor sem aliquam in. Duis venenatis aliquam posuere. Praesent varius lacus nulla, non maximus sapien venenatis viverra.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h2>Enjoy</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus est, congue eu justo vel, ullamcorper faucibus ligula. Etiam ex arcu, varius id rutrum at, convallis non orci. Quisque ac posuere nunc, ut pretium ante. In quis mi diam. Aenean placerat odio vel vestibulum vulputate. Morbi vitae nisl mauris. Cras vulputate posuere lacus, non porttitor sem aliquam in. Duis venenatis aliquam posuere. Praesent varius lacus nulla, non maximus sapien venenatis viverra.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+            <h3>
+              Still have questions? Check out our <a href="#">FAQs</a>!
+            </h3>
         </div>
       </div>
     </div>
-    <!-- End navbar -->
-    
-    
-    <!-- Jumbotron Begin -->
-    <div class="jumbotron">
-    	<div class="container">
-     		<div class="row">
-       		<div class="col-sm-8">
-					<h1>Online shop featuring new and gently worn clothing. </h1>
-					<h2 class="lead">New styles posted every Tuesday at 12PM EST.</h2>
-						<a class="btn btn-default btn-lg" href="#">Instagram</a>
-						<a class="btn btn-default btn-lg" href="#">Get notified</a>
-				</div>
-				<div class="col-sm-4 hidden-sm">
-					<form>
-						<div class="form-group">
-										 <label for="name" class="form_label">First Name</label>
-										 <input type="text" id="first_name" class="form-control" required="required"> 
-										 
-										 <label for="name" class="form_label">Last Name</label>
-										 <input type="text" id="last_name" class="form-control" required="required"> 
 
-										 <label for="email" class="form_label">Email</label>
-										 <input type="email" id="email" class="form-control" required="required" > 
 
-										<label for="job" class="form_label">Birthday</label>
-											<select id="birthday_month" class="form-control">
-											  <option value="january">January</option>
-											  <option value="february">February</option>
-											  <option value="march">March</option>
-											  <option value="april">April</option>
-											  <option value="may">May</option>
-											  <option value="june">June</option>
-											  <option value="july">July</option>
-											  <option value="august">August</option>
-											  <option value="september">September</option>
-											  <option value="october">October</option>
-											  <option value="november">November</option>
-											  <option value="december">December</option>
-											</select>
-
-										<label for="brands" class="form_label">Preferred Brands</label>
-											<select id="brands" class="form-control">
-												  <option value="anthropologie">Anthropologie</option>
-												  <option value="free_people">Free People</option>
-												  <option value="j_crew">J. Crew</option>
-												  <option value="kate_spade">Kate Spade</option>
-												  <option value="lululemon">Lululemon</option>
-												  <option value="marc_jacobs">Marc by Marc Jacobs</option>
-												  <option value="madewell">Madewell</option>
-											</select>
-									
-										<label for="notifications" id="form_label">Notify me about...</label>
-											<div class="checkbox">
-												<label>
-													<input type="checkbox"> Sale Reminders
-												</label><br>
-												<label>
-													<input type="checkbox"> Preferred Brands
-												</label><br>
-												<label>
-													<input type="checkbox"> Special Offers
-												</label>											
-											</div>
-										
-
-									<button type="submit" class="btn btn-default" id="form_button">Sign Up!</button>
-
-						</div>
-    				</form>
-
-	    		</div>
-
-	    	</div>
-    	</div>
+    <!--Section 3 - Instagram Feed -->
+    <div class="section-wrapper-color">
+      <div class="container">
+   		  <div class="row">
+          <h1 class="text-center">New Items</h1>
+       		  <div id="instafeed">
+    					<div class="container">
+  						  <div class="row">
+					      </div>
+					    </div>
+			      </div>
+		      </div>
+		    </div>
+      </div>
     </div>
-    <!-- Jumbotron End -->
-    
-    
-    <!-- Instagram Feed BEGIN-->
-    	<div class="container">
-     		<div class="row">
-       		<div class="col-md-12 pull-left" id="instafeed">
-					<div class="container">
-						<div class="row">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-   
-    <!-- Instagram Feed END-->
-	
-			<div class="signup-form-container">
-				<div class="signup-form">
-				  <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-					 <label for="EMAIL">Signup for our newsletters</label>
-					 <span class="input-block">
-						<input type="email" class="required email" placeholder="Email Address" value="" id="EMAIL" required="" name="EMAIL"><input class="compact" type="submit" name="subscribe" value="→">
-					 </span>
-				  </form>
-				</div>
-			 </div>
-	  
-	    
-	 <!-- Instagram Feed Script-->
 
+    <!--End Section 2 -->
+
+
+<!--End HOME -->
+
+<!-- Footer -->
+    <footer class="footer-wrapper">
+      <nav class="footer-navbar text-center">
+        <div class="container">
+          <div class="row">
+            <ul class="nav navbar-nav">
+              <li class="nav-link"><a href="#">About</a></li>
+              <li class="nav-link"><a href="#">Contact</a></li>
+              <li class="nav-link"><a href="#">Shipping</a></li>
+              <li class="nav-link"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">&copy; Spare Closet | All Rights Reserved.</p>
+          </div>
+        </div>
+      </nav>
+    </footer>
+<!-- End Footer -->
+
+
+<!-- Instagram Feed Script-->
 		<script type="text/javascript">
 			var userFeed = new Instafeed({
 				get: 'user',
 				userId: '1525502587',
 				clientId: '078653767c064d988bc3044d9396b53e',
-				accessToken: '1525502587.0786537.0d4fde1010de44b48f8ec24a48529648',				resolution: 'standard_resolution',
+				accessToken: '1525502587.0786537.0d4fde1010de44b48f8ec24a48529648',
+				resolution: 'standard_resolution',
 				template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}"/><span>{{caption}}</span></a>',
 				sortBy: 'most-recent',
 				limit: 32,
@@ -155,4 +204,7 @@
 			});
 			userFeed.run();
 		</script>
-	</body>	
+	    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -11,22 +11,25 @@
 */
 
 
-/* ---------------------------------------------------
-	Imported libraries
---------------------------------------------------- */
-/* ---------------------------------------------------
-	Color definitions
---------------------------------------------------- */
 
-
-
-
-/* Typography
+/* Custom Typography
 ================================= */
+body {
+	padding-top: 80px;
+}
+
 h1 {
 	font-weight: 200;
 	margin-bottom: 30px;
 }
+
+
+p, li {
+	line-height: 1.7;
+	font-size: 1.1em;
+	letter-spacing: .016em;
+}
+
 
 .lead {
 	margin-bottom: 25px;
@@ -38,29 +41,79 @@ h1 {
 }
 
 
-/* Links
+
+/* Custom Section Containers
 ================================= */
 
+.section-wrapper-intro {
+  background: url("../img/background.jpg")no-repeat bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	padding: 50px 50px;
+}
+
+.row-intro {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.section-wrapper-white {
+	background: #fff;
+	padding: 50px 0;
+}
+
+.section-wrapper-color {
+	background: #fff9f5;
+	padding: 50px 0;
+}
+
+.footer-navbar {
+	position: relative;
+	min-height: 80px;
+	background-color: #555;
+	color:white;
+}
 
 
-
-/* Instagram
+/* Footer
 ================================= */
+
+.copyright {
+	line-height: 1.7;
+	font-size: 1em;
+	letter-spacing: .016em;
+}
+
+/* Instagram Feed
+================================= */
+
+#instagram-feed {
+	padding-top: 100px;
+	background: #fff9f5;
+}
 
 #instafeed a {
-   display: block;
-   float: left;
+  display: block;
+  float: left;
 	width: calc((100% - 30px)/3);
-   position: relative;
+  position: relative;
 	margin: 5px 5px 40px 5px;
-	text-align: center
+	text-align: center;
+	line-height: 1.7em;
+	font-size: 1.2em;
+	letter-spacing: .016em;
+	padding: 0 5px;
+	text-decoration: none;
 }
 
 #instafeed a img {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
+
+	}
 
 img, picture {
     margin: 0;
@@ -72,8 +125,6 @@ img, picture {
     content: "";
     display: table;
 }
-
-
 
 
 @media (max-width: 960px) {
@@ -89,7 +140,7 @@ img, picture {
 		width: calc((100% - 20px)/2);
 	}
 }
-	
+
 @media (max-width: 420px) {
 	#instafeed a{
 		min-height: 25%;
@@ -97,42 +148,19 @@ img, picture {
 
 	}
 }
-	
-/* Form
+
+
+/* Custom Form
 ================================= */
 
 form {
 	background-color: #ffede1;
-}
-
-
-.form-group {
-	padding: 15px;
-}
-
-.checkbox {
-	margin-top: 0px;
+	padding: 20px 15px;
 }
 
 
 
-#form_button {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-
-.form_label
-
-
-
-
-{
-	margin-top: 10px;
-}
-
-
-/* Buttons
+/* Custom Buttons
 ================================= */
 
 .btn-default {
@@ -148,29 +176,13 @@ form {
 	transition: .35s;
 }
 
-
-/* Jumbotron
-================================= */
-
-.jumbotron {
-	margin-top: 70px;
-	background-image: url('../img/background.jpg');
-	max-height: 700px;
-	background-repeat: no-repeat;
-	padding: 100px 0 120px 0;
-	margin-bottom: 70px;
-}
-
-
-
-
 /* Logos & Icons
 ================================= */
 
 .main-logo {
 	width: 200px;
 	height: 50px;
-	margin-top: 22px;
+	margin-top: 20px;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -178,31 +190,14 @@ form {
 	background-size: 100%;
 }
 
-	
+
 /* Media Queries
 ================================= */
 
-@media (max-width: 990px) {
-	.jumbotron {
-		padding-top: 120px;
-		padding-bottom: 20px;
-	}
-}
-
-
 @media (max-width: 760px) {
-	.navbar {
-		min-height: 60px;
-	}
-	
-	.main-logo{ 
-		margin-top: 20px;
-	}
-	
-	.jumbotron {
-		padding-top: 80px;
-		margin-bottom: 32px;
+
+	.main-logo {
+		margin-left: 20px;
 	}
 
-	
 }

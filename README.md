@@ -14,7 +14,5 @@ Spare Closet is an Instagram shop that will sell new and gently worn womens clot
   <li>How it works</li>
 </ul>
 
-<p>This site is built with a custom Bootstrap framework and is responsive on many devices</p>
-<p>This site also uses Instagram's API to pull in Spare Closet's Instagram feed on the homepage</p> 
-<p>I applied for Instagram Developer Tools to access my client token and run the script on my page with my accoun ID. I've coded the script to populate the homepage in real-time with "New Items" whenever they are posted on Instagram. When a user clicks a photo from Spare Closet's website, they will be directed to the Instagram Shop where they can chose to purchase the item.</p>
-
+<p>This site is built with a custom Bootstrap framework and is responsive on many devices.</p>
+<p>This site also uses Instagram's API to pull in Spare Closet's Instagram feed on the homepage. I applied for Instagram Developer Tools to access my client token and run the script on my page with my accoun ID. I've coded the script to populate the homepage in real-time with "New Items" whenever they are posted on Instagram. When a user clicks a photo from Spare Closet's website, they will be directed to the Instagram Shop where they can chose to purchase the item.</p>

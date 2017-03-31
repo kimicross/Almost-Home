@@ -190,3 +190,9 @@ form {
 	}
 
 }
+
+@media (max-width: 420px) {
+	.section-wrapper-intro{
+		padding: 5px;
+	}
+}

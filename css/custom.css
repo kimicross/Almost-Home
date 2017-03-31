@@ -38,7 +38,6 @@ p, li {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	padding: 50px 50px;
 }
 
 .row-intro {
@@ -191,8 +190,3 @@ form {
 
 }
 
-@media (max-width: 420px) {
-	.section-wrapper-intro{
-		padding: 5px;
-	}
-}
